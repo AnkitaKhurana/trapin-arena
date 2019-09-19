@@ -1,11 +1,13 @@
 import React from 'react';
+import NavBar from './Components/Navbar/navbar.jsx';
+import Screen from './Components/Screen/screen.jsx';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      
-        Trapin Arena
+      <NavBar/>
+      <Screen/>
     </div>
   );
 }
