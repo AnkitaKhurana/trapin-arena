@@ -5,10 +5,13 @@ import PropTypes from "prop-types";
 const styles = theme => ({
 });
 class RightScreen extends React.Component {
+  constructor(props) {
+    super(props);
+  }
   render() {
     const { classes } = this.props;
 
-    return <div>RIGHT</div>;
+    return <div>{this.props.category}</div>;
   }
 }
 
