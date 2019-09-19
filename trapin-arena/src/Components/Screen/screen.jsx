@@ -2,6 +2,7 @@ import React from "react";
 import LeftPanel from "./LeftPanel/leftPanel";
 import PropTypes from "prop-types";
 import { withStyles } from "@material-ui/styles";
+import RightPanel from "./RightPanel/rightPanel";
 const drawerWidth = 240;
 
 const styles = theme => ({
@@ -25,8 +26,7 @@ class Screen extends React.Component {
         <LeftPanel></LeftPanel>
         <main className={classes.content}>
           <div className={classes.toolbar} />
-        
-
+          <RightPanel></RightPanel>
         </main>
       </div>
     );
