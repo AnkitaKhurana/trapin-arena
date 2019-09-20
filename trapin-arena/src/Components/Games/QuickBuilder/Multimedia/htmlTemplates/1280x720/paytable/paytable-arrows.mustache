@@ -1,0 +1,54 @@
+<style>
+
+    /*arrows*/
+    #paytableNavigation_arrows {
+        top: 300px;
+        left: 40px;
+    }
+
+    #paytableNavigation_arrows li {
+        position: absolute;
+        width: 29px;
+        height: 50px;
+        text-indent: 100px;
+        overflow: hidden;
+    }
+
+    .interface-cardNavigation_arrows_previous {
+        background: url("multimedia/images/1280x720/paytable/CS_arrow.png") no-repeat;
+    }
+
+    .interface-cardNavigation_arrows_previous:hover {
+        background: url("multimedia/images/1280x720/paytable/CS_arrow_over.png") no-repeat;
+    }
+
+    .interface-cardNavigation_arrows_previous:active {
+        background: url("multimedia/images/1280x720/paytable/CS_arrow_press.png") no-repeat;
+    }
+
+    .interface-cardNavigation_arrows_next {
+        background: url("multimedia/images/1280x720/paytable/CS_arrow.png") no-repeat;
+        background-repeat: no-repeat;
+        left: 1166px;
+
+        -ms-filter: "FlipH";
+        transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+    }
+
+    .interface-cardNavigation_arrows_next:hover {
+        background: url("multimedia/images/1280x720/paytable/CS_arrow_over.png") no-repeat;
+    }
+
+    .interface-cardNavigation_arrows_next:active {
+        background: url("multimedia/images/1280x720/paytable/CS_arrow_press.png") no-repeat;
+    }
+
+</style>
+
+<ul id="paytableNavigation_arrows" class="interface-cardNavigation_arrows clearfix trim">
+    <li id="paytablePrevious" class="clickPrev interface-cardNavigation_arrows_previous"></li>
+    <li id="paytableNext" class="clickNext interface-cardNavigation_arrows_next"></li>
+</ul>

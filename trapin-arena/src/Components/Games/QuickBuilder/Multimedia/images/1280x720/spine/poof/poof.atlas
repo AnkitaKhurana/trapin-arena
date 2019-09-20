@@ -1,0 +1,27 @@
+
+poof.png
+size: 359,207
+format: RGBA4444
+filter: Linear,Linear
+repeat: xy
+images/glow
+  rotate: false
+  xy: 207, 55
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+images/puff_b
+  rotate: false
+  xy: 2, 2
+  size: 203, 203
+  orig: 203, 203
+  offset: 0, 0
+  index: -1
+images/puff_m
+  rotate: false
+  xy: 207, 21
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1

@@ -1,0 +1,20 @@
+
+waterMask.png
+size: 1284,180
+format: RGBA4444
+filter: Linear,Linear
+repeat: xy
+foam
+  rotate: false
+  xy: 2, 2
+  size: 1280, 74
+  orig: 1280, 74
+  offset: 0, 0
+  index: -1
+mask
+  rotate: false
+  xy: 2, 78
+  size: 1280, 100
+  orig: 1280, 100
+  offset: 0, 0
+  index: -1

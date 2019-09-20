@@ -1,0 +1,340 @@
+{
+  "skeleton": {
+    "hash": "kJUmOkSa4qWzAzpx3i5CITpjU9o",
+    "spine": "3.6.52",
+    "width": 1012,
+    "height": 202,
+    "images": "./images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "name": "river",
+      "parent": "root"
+    }
+  ],
+  "slots": [
+    {
+      "name": "river_000",
+      "bone": "river",
+      "attachment": "river_013"
+    }
+  ],
+  "skins": {
+    "default": {
+      "river_000": {
+        "river_002": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_003": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_004": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_005": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_006": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_007": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_008": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_009": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_010": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_011": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_012": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_013": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_014": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_015": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_016": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_017": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_018": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_019": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_020": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_021": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_022": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_024": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_025": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_026": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_027": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_028": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_029": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_031": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_032": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_033": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_034": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_035": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_036": {
+          "width": 1012,
+          "height": 202
+        },
+        "river_037": {
+          "width": 1012,
+          "height": 202
+        }
+      }
+    }
+  },
+  "events": {
+    "splash": {}
+  },
+  "animations": {
+    "splash": {
+      "slots": {
+        "river_000": {
+          "attachment": [
+            {
+              "time": 0,
+              "name": "river_002"
+            },
+            {
+              "time": 0.0333,
+              "name": "river_003"
+            },
+            {
+              "time": 0.0667,
+              "name": "river_004"
+            },
+            {
+              "time": 0.1,
+              "name": "river_005"
+            },
+            {
+              "time": 0.1333,
+              "name": "river_006"
+            },
+            {
+              "time": 0.1667,
+              "name": "river_007"
+            },
+            {
+              "time": 0.2,
+              "name": "river_008"
+            },
+            {
+              "time": 0.2333,
+              "name": "river_009"
+            },
+            {
+              "time": 0.2667,
+              "name": "river_010"
+            },
+            {
+              "time": 0.3,
+              "name": "river_011"
+            },
+            {
+              "time": 0.3333,
+              "name": "river_012"
+            },
+            {
+              "time": 0.3667,
+              "name": "river_013"
+            },
+            {
+              "time": 0.4,
+              "name": "river_014"
+            },
+            {
+              "time": 0.4333,
+              "name": "river_015"
+            },
+            {
+              "time": 0.4667,
+              "name": "river_016"
+            },
+            {
+              "time": 0.5,
+              "name": "river_017"
+            },
+            {
+              "time": 0.5333,
+              "name": "river_018"
+            },
+            {
+              "time": 0.5667,
+              "name": "river_019"
+            },
+            {
+              "time": 0.6,
+              "name": "river_020"
+            },
+            {
+              "time": 0.6333,
+              "name": "river_021"
+            },
+            {
+              "time": 0.6667,
+              "name": "river_022"
+            },
+            {
+              "time": 0.7,
+              "name": "river_024"
+            },
+            {
+              "time": 0.7333,
+              "name": "river_025"
+            },
+            {
+              "time": 0.7667,
+              "name": "river_026"
+            },
+            {
+              "time": 0.8,
+              "name": "river_027"
+            },
+            {
+              "time": 0.8333,
+              "name": "river_028"
+            },
+            {
+              "time": 0.8667,
+              "name": "river_029"
+            },
+            {
+              "time": 0.9,
+              "name": "river_031"
+            },
+            {
+              "time": 0.9333,
+              "name": "river_032"
+            },
+            {
+              "time": 0.9667,
+              "name": "river_033"
+            },
+            {
+              "time": 1,
+              "name": "river_034"
+            },
+            {
+              "time": 1.0333,
+              "name": "river_035"
+            },
+            {
+              "time": 1.0667,
+              "name": "river_036"
+            },
+            {
+              "time": 1.1,
+              "name": "river_037"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "river": {
+          "translate": [
+            {
+              "time": 0,
+              "x": 25.03,
+              "y": -170
+            }
+          ],
+          "scale": [
+            {
+              "time": 0,
+              "x": 1,
+              "y": 1
+            }
+          ]
+        }
+      },
+      "events": [
+        {
+          "time": 0.5,
+          "name": "splash"
+        }
+      ]
+    }
+  }
+}

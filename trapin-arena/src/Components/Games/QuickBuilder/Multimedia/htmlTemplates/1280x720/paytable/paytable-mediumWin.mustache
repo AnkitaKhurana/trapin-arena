@@ -1,0 +1,84 @@
+<div xmlns="http://www.w3.org/1999/xhtml" class="interface-paytable_section interface-settingsSection_subSection"
+     style="display: block;">
+    <style>
+        .interface-paytable_symbolValues li {
+            display: inline-block;
+            float: left !important;
+            position: relative;
+            width: 100%;
+        }
+
+        .interface-paytable_symbols {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 75%;
+            margin-top: 58px;
+        }
+
+        .interface-paytable_symbol_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .symbolNumbers {
+            display: flex;
+            flex-direction: row;
+            width: 45%;
+            font: 36px NetentStandardUIBold;
+            text-align: right;
+        }
+
+        .symbolCount {
+            color: #ffe538;
+            width: 45%;
+            text-align: left;
+        }
+
+        .symbolPayout {
+            color: #FFFFFF;
+            text-align: left;
+            margin-left: 35px;
+        }
+
+        .interface-paytable_symbolNumbers_container{
+            margin-left: 25px;
+        }
+
+        .root_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+    </style>
+    <div class="root_container">
+        <div class="header bonusFeatureHeaderUC">{{HEADER}}</div>
+
+        <div class="interface-paytable_symbols">
+
+            {{#symbols}}
+                <div class="interface-paytable_symbol_container">
+                    <img src="{{image}}" class="SYM-image"/>
+
+                    <div class="interface-paytable_symbolNumbers_container">
+
+                        {{#coins}}
+                            <div class="symbolNumbers">
+                                <div class="symbolCount">{{number}}</div>
+                                <div class="symbolPayout">{{amount}}</div>
+                            </div>
+                        {{/coins}}
+
+                    </div>
+                </div>
+
+            {{/symbols}}
+
+        </div>
+    </div>
+
+</div>

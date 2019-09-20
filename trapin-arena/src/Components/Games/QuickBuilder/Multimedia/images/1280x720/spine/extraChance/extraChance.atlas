@@ -1,0 +1,20 @@
+
+extraChance.png
+size: 1101,128
+format: RGBA4444
+filter: Linear,Linear
+repeat: xy
+images/chance
+  rotate: false
+  xy: 2, 2
+  size: 598, 124
+  orig: 598, 124
+  offset: 0, 0
+  index: -1
+images/extra
+  rotate: false
+  xy: 602, 2
+  size: 497, 124
+  orig: 497, 124
+  offset: 0, 0
+  index: -1
