@@ -1,0 +1,45 @@
+<div xmlns="http://www.w3.org/1999/xhtml" class="paytable-bottom-text">
+    <style>
+        .paytable-bottom-text {
+            font-family: "NetentStandardUI";
+            position: absolute;
+            width: 90%;
+            font-size: 16px;
+            text-align: center;
+            line-height: 21px;
+            color: #FFFFFF;
+            margin-left: 5%;
+            top: 535px;
+        }
+
+
+        /*close button */
+        .back-button {
+            position: absolute;
+            top: 95px;
+            left: 0px;
+            width: 45px;
+            height: 45px;
+            background: url("multimedia/images/1280x720/paytable/PT_navigation_btn_close_up.png") no-repeat;
+            z-index: 500;
+        }
+
+        .back-button:hover {
+            background: url("multimedia/images/1280x720/paytable/PT_navigation_btn_close_over.png") no-repeat;
+        }
+
+        .back-button:active {
+            background: url("multimedia/images/1280x720/paytable/PT_navigation_btn_close_down.png") no-repeat;
+        }
+
+
+    </style>
+    {{#BODY}}
+    <span class="line-item"><span class="bullet-element"> </span><span>{{.}}</span></span>
+    {{/BODY}}
+    <div>
+        <span class="line-item"><span class="bullet-element"> </span><span>{{EXTRA_INFO}}</span></span>
+    </div>
+
+    <div id="backButton" class="back-button"></div>
+</div>

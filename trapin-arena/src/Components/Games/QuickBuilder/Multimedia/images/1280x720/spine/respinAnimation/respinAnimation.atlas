@@ -1,0 +1,34 @@
+
+respinAnimation.png
+size: 1278,229
+format: RGBA4444
+filter: Linear,Linear
+repeat: xy
+images/mask
+  rotate: false
+  xy: 2, 7
+  size: 640, 220
+  orig: 640, 220
+  offset: 0, 0
+  index: -1
+images/particles
+  rotate: false
+  xy: 1084, 17
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
+images/rays
+  rotate: true
+  xy: 644, 2
+  size: 225, 438
+  orig: 225, 438
+  offset: 0, 0
+  index: -1
+images/tree_mask
+  rotate: false
+  xy: 1084, 39
+  size: 192, 188
+  orig: 192, 188
+  offset: 0, 0
+  index: -1

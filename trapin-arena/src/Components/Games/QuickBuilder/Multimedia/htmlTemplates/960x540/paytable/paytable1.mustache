@@ -1,0 +1,220 @@
+<style>
+    .tablet_landscape #settingsWindow, .mobile_portrait #settingsWindow, .mobile_landscape #settingsWindow {
+        width: 100%;
+        height: 96%;
+        margin: 0;
+        background-color: #131313;
+        overflow: hidden;
+    }
+
+    .mobile-version {
+        padding: 10px;
+    }
+
+    .tablet_landscape #settingsWindowHeader, .mobile_portrait #settingsWindowHeader, .mobile_landscape #settingsWindowHeader {
+        display: block;
+        background-size: 80%;
+        font-size: .45rem;
+    }
+
+    .top-part {
+        position: relative;
+        margin-bottom: 15px;
+    }
+
+    .featureText {
+        font-family: NetentStandardUI;
+        list-style-type: none;
+    }
+
+    .mobileHeader {
+        font-family: NetentStandardUIBold;
+        font-size: 35px;
+    }
+
+    .slide-image {
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        opacity: 0;
+    }
+
+    .fade-in {
+        -webkit-animation-name: fade-in;
+        -moz-animation-name: fade-in;
+        -o-animation-name: fade-in;
+        animation-name: fade-in;
+        animation-duration: 0.5s;
+    }
+
+    .fade-out {
+        -webkit-animation-name: fade-out;
+        -moz-animation-name: fade-out;
+        -o-animation-name: fade-out;
+        animation-name: fade-out;
+        animation-duration: 0.5s;
+    }
+
+    .expander {
+        width: 100%;
+        height: 220px;
+        position: relative;
+    }
+
+    .symbolImage {
+        width: 60% !important;
+    }
+
+    .symbolImage img {
+        margin-left: 25%;
+    }
+
+    .table-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .symbols-table{
+        margin: 0 auto;
+        width: 466px;
+    }
+
+    .win-level {
+        display: block;
+        font-family: NetentStandardUIBoldItalic;
+        color: #ffe538;
+        text-align: right;
+        width: 10%;
+    }
+
+    .win-value {
+        display: block;
+        font-family: NetentStandardUIBoldItalic;
+        color: #ffffff;
+        text-align: left;
+        width: 81%;
+        margin-left: 10px !important;
+    }
+
+    .interface-paytable_symbolValues {
+        font-size: 33px;
+    }
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade-out {
+        from {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+</style>
+
+<div class="interface-paytable_section interface-settingsSection_subSection mobile-version  utils_center_text">
+    <div class="interface-paytable_heading mobileHeader">{{RESPIN.HEADER}}</div>
+    <div class=" top-part" id="respinSlides">
+        <slides class="slideshow-container">
+            {{#RESPIN.SLIDES}}
+                <img src="multimedia/images/960x540/paytable/{{.}}" class="img" style="opacity: 0;"/>
+            {{/RESPIN.SLIDES}}
+        </slides>
+    </div>
+    <div class="bottom-part">
+        <ul class="none-list">
+            {{#RESPIN.BODY}}
+                <li class="featureText">{{.}}</li>
+            {{/RESPIN.BODY}}
+        </ul>
+    </div>
+</div>
+
+<div class="interface-paytable_section interface-settingsSection_subSection mobile-version  utils_center_text interface-settingsSection_subSection_uri">
+    <div class="interface-paytable_heading mobileHeader">{{COLOSSAL.HEADER}}</div>
+    <div class=" top-part" id="respinSlides">
+        <slides class="slideshow-container">
+            {{#COLOSSAL.SLIDES}}
+                <img src="multimedia/images/960x540/paytable/{{.}}" class="img" style="opacity: 0;"/>
+            {{/COLOSSAL.SLIDES}}
+        </slides>
+    </div>
+    <div class="bottom-part">
+        <ul class="none-list">
+            {{#COLOSSAL.BODY}}
+                <li class="featureText">{{.}}</li>
+            {{/COLOSSAL.BODY}}
+        </ul>
+    </div>
+</div>
+
+
+<div class="interface-paytable_section interface-settingsSection_subSection mobile-version  utils_center_text interface-settingsSection_subSection_uri">
+    <div class="interface-paytable_heading mobileHeader"> {{BONUS_BET.HEADER}} &#38 {{BONUS_BET.HEADER2}}</div>
+    <div class=" top-part" id="respinSlides">
+        <slides class="slideshow-container">
+            {{#BONUS_BET.SLIDES}}
+                <img src="multimedia/images/960x540/paytable/{{.}}" class="img" style="opacity: 0;"/>
+            {{/BONUS_BET.SLIDES}}
+        </slides>
+    </div>
+    <div class="bottom-part">
+        <ul class="none-list">
+            {{#BONUS_BET.BODY}}
+                <li class="featureText">{{.}}</li>
+            {{/BONUS_BET.BODY}}
+        </ul>
+    </div>
+</div>
+
+<div class="interface-paytable_section interface-settingsSection_subSection mobile-version  utils_center_text interface-settingsSection_subSection_uri">
+    <div class="interface-paytable_heading mobileHeader">{{WILDS.HEADER}}</div>
+    <div class=" top-part" id="respinSlides">
+        <img src="multimedia/images/1280x720/symbols/sym1.png" class="img"/>
+    </div>
+    <div class="bottom-part">
+        {{WILDS.BODY}}
+    </div>
+</div>
+
+<div class="interface-paytable_section interface-settingsSection_subSection mobile-version interface-settingsSection_subSection_uri">
+    <div class="interface-paytable_heading utils_center_text mobileHeader">{{ALL_SYMBOLS.HEADER}}</div>
+    <div class="table-container">
+        <table class="interface-paytable_symbols symbols-table">
+            {{#ALL_SYMBOLS.symbols}}
+                <tr class="mobile-version one-symbol-payout">
+                    <td class="symbolImage">
+                        <img src="multimedia/images/1280x720/symbols/{{name}}.png" class="SYM-image symbol-SYM3"/>
+                    </td>
+                    <td>
+
+                        <ul class="interface-paytable_symbolValues payout-tables">
+                            {{#coins}}
+                                <li class="win-level">{{number}}</li>
+                                <li class="win-value">{{amount}}</li>
+                            {{/coins}}
+                        </ul>
+                    </td>
+                </tr>
+            {{/ALL_SYMBOLS.symbols}}
+        </table>
+    </div>
+</div>
+<div class="interface-paytable_section interface-settingsSection_subSection mobile-version utils_center_text interface-settingsSection_subSection_uri">
+    <div class="interface-paytable_heading mobileHeader">
+        {{BETLINES.HEADER}}
+    </div>
+    <img style="width: 100%;" src="multimedia/images/960x540/paytable/PT_bet_combinations.png"/>
+</div>
+<div class="utils_center_text interface-settingsSection_subSection_uri interface-settingsSection_disclaimer_uri">
+    {{#DISCLAIMER_MOBILE.BODY}}
+        <div>{{.}}</div>
+    {{/DISCLAIMER_MOBILE.BODY}}
+</div>

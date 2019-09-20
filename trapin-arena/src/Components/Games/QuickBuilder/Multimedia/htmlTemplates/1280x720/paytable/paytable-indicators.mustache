@@ -1,0 +1,53 @@
+<style>
+
+    /*indicators*/
+    .interface-cardNavigation_indicator {
+        padding: 0 !important;
+        height: 21px !important;
+        width: 20px !important;
+
+        background-size: auto 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        background: url('multimedia/images/1280x720/paytable/PT_paytable_navigation_up.png');/*'../multimedia/images/1280x720/paytable/indicator.png'*/
+    }
+
+    .interface-cardNavigation_indicator:hover {
+        background-size: auto 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        background: url('multimedia/images/1280x720/paytable/PT_paytable_navigation_over.png');
+    }
+
+    .interface-cardNavigation_indicator.interface-cardNavigation_selectedIndicator {
+        background-size: auto 100%;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        background: url('multimedia/images/1280x720/paytable/PT_paytable_navigation_selected.png');
+    }
+
+    #paytableNavigationindicators {
+        left: 637px;
+        top: 490px;
+    }
+
+    .interface-cardNavigation_indicators li {
+        height: 10px;
+        width: 10px;
+        margin-left: 19px;
+        float: left;
+        display: inline-block;
+
+    }
+</style>
+
+
+<ul id="paytableNavigationindicators" class="interface-cardNavigation_indicators clearfix utils_horizontal_center trim">
+    {{#.}}
+        <!--ATTENTION : 'clickOnPage' class activate click event and clickIndex is an argument for switch function-->
+        <li clickIndex="{{index}}" class="clickOnPage interface-cardNavigation_indicator interface-cardNavigation_{{#active}}selectedIndicator{{/active}}"></li>
+    {{/.}}
+</ul>

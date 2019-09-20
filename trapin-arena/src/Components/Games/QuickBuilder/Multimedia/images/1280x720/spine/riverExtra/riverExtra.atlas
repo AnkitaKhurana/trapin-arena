@@ -1,0 +1,20 @@
+
+riverExtra.png
+size: 402,340
+format: RGBA4444
+filter: Linear,Linear
+repeat: xy
+line
+  rotate: false
+  xy: 260, 2
+  size: 140, 336
+  orig: 140, 336
+  offset: 0, 0
+  index: -1
+net
+  rotate: false
+  xy: 2, 82
+  size: 256, 256
+  orig: 256, 256
+  offset: 0, 0
+  index: -1

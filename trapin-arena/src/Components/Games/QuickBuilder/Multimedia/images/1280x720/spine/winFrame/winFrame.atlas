@@ -1,0 +1,265 @@
+
+winFrame.png
+size: 450,1028
+format: RGBA4444
+filter: Linear,Linear
+repeat: xy
+particle
+  rotate: false
+  xy: 2, 2
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+particle2
+  rotate: false
+  xy: 338, 114
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+symbolBorder_000
+  rotate: false
+  xy: 2, 916
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_001
+  rotate: false
+  xy: 2, 804
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_002
+  rotate: false
+  xy: 114, 916
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_003
+  rotate: false
+  xy: 2, 692
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_004
+  rotate: false
+  xy: 114, 804
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_005
+  rotate: false
+  xy: 226, 916
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_006
+  rotate: false
+  xy: 2, 580
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_007
+  rotate: false
+  xy: 114, 692
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_008
+  rotate: false
+  xy: 226, 804
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_009
+  rotate: false
+  xy: 338, 916
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_010
+  rotate: false
+  xy: 2, 468
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_011
+  rotate: false
+  xy: 114, 580
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_012
+  rotate: false
+  xy: 226, 692
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_013
+  rotate: false
+  xy: 338, 804
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_014
+  rotate: false
+  xy: 2, 356
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_015
+  rotate: false
+  xy: 114, 468
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_016
+  rotate: false
+  xy: 226, 580
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_017
+  rotate: false
+  xy: 338, 692
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_018
+  rotate: false
+  xy: 2, 244
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_019
+  rotate: false
+  xy: 114, 356
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_020
+  rotate: false
+  xy: 226, 468
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_021
+  rotate: false
+  xy: 338, 580
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_022
+  rotate: false
+  xy: 2, 132
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_023
+  rotate: false
+  xy: 114, 244
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_024
+  rotate: false
+  xy: 226, 356
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_025
+  rotate: false
+  xy: 338, 468
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_026
+  rotate: false
+  xy: 2, 20
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_027
+  rotate: false
+  xy: 114, 132
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_028
+  rotate: false
+  xy: 226, 244
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_029
+  rotate: false
+  xy: 338, 356
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_030
+  rotate: false
+  xy: 114, 20
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_031
+  rotate: false
+  xy: 226, 132
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_032
+  rotate: false
+  xy: 338, 244
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_033
+  rotate: false
+  xy: 226, 20
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1
+symbolBorder_034
+  rotate: false
+  xy: 338, 132
+  size: 110, 110
+  orig: 110, 110
+  offset: 0, 0
+  index: -1

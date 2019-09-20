@@ -1,0 +1,32 @@
+BW_mobile.png
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+assets/axl_asset
+  rotate: false
+  xy: 2, 2
+  size: 554, 901
+  orig: 622, 1000
+  offset: 34, 0
+  index: -1
+assets/black_bg
+  rotate: false
+  xy: 634, 204
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+assets/flareAlpha
+  rotate: false
+  xy: 558, 2
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+assets/glow
+  rotate: false
+  xy: 558, 204
+  size: 74, 74
+  orig: 74, 74
+  offset: 0, 0
+  index: -1

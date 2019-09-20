@@ -1,0 +1,20 @@
+
+respinArea.png
+size: 457,305
+format: RGBA4444
+filter: Linear,Linear
+repeat: xy
+glow
+  rotate: false
+  xy: 2, 2
+  size: 301, 301
+  orig: 301, 301
+  offset: 0, 0
+  index: -1
+respin
+  rotate: false
+  xy: 305, 153
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1

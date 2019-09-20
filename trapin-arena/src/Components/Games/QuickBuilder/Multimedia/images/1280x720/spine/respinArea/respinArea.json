@@ -1,0 +1,976 @@
+{
+  "skeleton": {
+    "hash": "Igl23I4r6JTjEpClPlFYw1E07u0",
+    "spine": "3.6.52",
+    "width": 901,
+    "height": 601,
+    "images": "./images/"
+  },
+  "bones": [
+    {
+      "name": "root"
+    },
+    {
+      "name": "respin0",
+      "parent": "root"
+    },
+    {
+      "name": "respin00",
+      "parent": "respin0",
+      "x": 75,
+      "y": -75
+    },
+    {
+      "name": "respin01",
+      "parent": "respin0",
+      "x": 75,
+      "y": -225
+    },
+    {
+      "name": "respin1",
+      "parent": "root",
+      "x": 150
+    },
+    {
+      "name": "respin02",
+      "parent": "respin0",
+      "x": 75,
+      "y": -375
+    },
+    {
+      "name": "respin2",
+      "parent": "root",
+      "x": 300
+    },
+    {
+      "name": "respin3",
+      "parent": "root",
+      "x": 450
+    },
+    {
+      "name": "respin4",
+      "parent": "root",
+      "x": 600
+    },
+    {
+      "name": "respin10",
+      "parent": "respin1",
+      "x": 75,
+      "y": -75
+    },
+    {
+      "name": "respin11",
+      "parent": "respin1",
+      "x": 75,
+      "y": -225
+    },
+    {
+      "name": "respin12",
+      "parent": "respin1",
+      "x": 75,
+      "y": -375
+    },
+    {
+      "name": "respin20",
+      "parent": "respin2",
+      "x": 75,
+      "y": -75
+    },
+    {
+      "name": "respin21",
+      "parent": "respin2",
+      "x": 75,
+      "y": -225
+    },
+    {
+      "name": "respin22",
+      "parent": "respin2",
+      "x": 75,
+      "y": -375
+    },
+    {
+      "name": "respin30",
+      "parent": "respin3",
+      "x": 75,
+      "y": -75
+    },
+    {
+      "name": "respin31",
+      "parent": "respin3",
+      "x": 75,
+      "y": -225
+    },
+    {
+      "name": "respin32",
+      "parent": "respin3",
+      "x": 75,
+      "y": -375
+    },
+    {
+      "name": "respin40",
+      "parent": "respin4",
+      "x": 75,
+      "y": -75
+    },
+    {
+      "name": "respin41",
+      "parent": "respin4",
+      "x": 75,
+      "y": -225
+    },
+    {
+      "name": "respin42",
+      "parent": "respin4",
+      "x": 75,
+      "y": -375
+    }
+  ],
+  "slots": [
+    {
+      "name": "glow00",
+      "bone": "respin00",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow10",
+      "bone": "respin10",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow20",
+      "bone": "respin20",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow30",
+      "bone": "respin30",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow40",
+      "bone": "respin40",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow01",
+      "bone": "respin01",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow11",
+      "bone": "respin11",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow21",
+      "bone": "respin21",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow31",
+      "bone": "respin31",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow41",
+      "bone": "respin41",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow02",
+      "bone": "respin02",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow12",
+      "bone": "respin12",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow22",
+      "bone": "respin22",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow32",
+      "bone": "respin32",
+      "attachment": "glow"
+    },
+    {
+      "name": "glow42",
+      "bone": "respin42",
+      "attachment": "glow"
+    },
+    {
+      "name": "respin00",
+      "bone": "respin00",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin10",
+      "bone": "respin10",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin20",
+      "bone": "respin20",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin30",
+      "bone": "respin30",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin40",
+      "bone": "respin40",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin01",
+      "bone": "respin01",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin11",
+      "bone": "respin11",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin21",
+      "bone": "respin21",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin31",
+      "bone": "respin31",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin41",
+      "bone": "respin41",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin02",
+      "bone": "respin02",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin12",
+      "bone": "respin12",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin22",
+      "bone": "respin22",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin32",
+      "bone": "respin32",
+      "attachment": "respin"
+    },
+    {
+      "name": "respin42",
+      "bone": "respin42",
+      "attachment": "respin"
+    }
+  ],
+  "skins": {
+    "default": {
+      "glow00": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow01": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow02": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow10": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow11": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow12": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow20": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow21": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow22": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow30": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow31": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow32": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow40": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow41": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "glow42": {
+        "glow": {
+          "width": 301,
+          "height": 301
+        }
+      },
+      "respin00": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin01": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin02": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin10": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin11": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin12": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin20": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin21": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin22": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin30": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin31": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin32": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin40": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin41": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      },
+      "respin42": {
+        "respin": {
+          "width": 150,
+          "height": 150
+        }
+      }
+    }
+  },
+  "animations": {
+    "move": {
+      "slots": {
+        "glow00": {
+          "color": [
+            {
+              "time": 0.3333,
+              "color": "ffffffff"
+            },
+            {
+              "time": 1.1667,
+              "color": "ffffff00"
+            }
+          ]
+        },
+        "glow01": {
+          "color": [
+            {
+              "time": 0.1667,
+              "color": "ffffffff"
+            },
+            {
+              "time": 1,
+              "color": "ffffff00"
+            }
+          ]
+        },
+        "glow02": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffffff"
+            },
+            {
+              "time": 0.8333,
+              "color": "ffffff00"
+            }
+          ]
+        },
+        "respin00": {
+          "color": [
+            {
+              "time": 0.3333,
+              "color": "ffffffff"
+            },
+            {
+              "time": 1.1667,
+              "color": "ffffff00"
+            }
+          ]
+        },
+        "respin01": {
+          "color": [
+            {
+              "time": 0.1667,
+              "color": "ffffffff"
+            },
+            {
+              "time": 1,
+              "color": "ffffff00"
+            }
+          ]
+        },
+        "respin02": {
+          "color": [
+            {
+              "time": 0,
+              "color": "ffffffff"
+            },
+            {
+              "time": 0.8333,
+              "color": "ffffff00"
+            }
+          ]
+        }
+      },
+      "bones": {
+        "respin10": {
+          "translate": [
+            {
+              "time": 0.3333,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 0.8333,
+              "x": -160,
+              "y": 0,
+              "curve": [
+                0.375,
+                0.62,
+                0.716,
+                1
+              ]
+            },
+            {
+              "time": 1.1667,
+              "x": -150,
+              "y": 0
+            }
+          ]
+        },
+        "respin11": {
+          "translate": [
+            {
+              "time": 0.1667,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 0.6667,
+              "x": -160,
+              "y": 0,
+              "curve": [
+                0.375,
+                0.62,
+                0.716,
+                1
+              ]
+            },
+            {
+              "time": 1,
+              "x": -150,
+              "y": 0
+            }
+          ]
+        },
+        "respin12": {
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 0.5,
+              "x": -160,
+              "y": 0,
+              "curve": [
+                0.375,
+                0.62,
+                0.716,
+                1
+              ]
+            },
+            {
+              "time": 0.8333,
+              "x": -150,
+              "y": 0
+            }
+          ]
+        },
+        "respin20": {
+          "translate": [
+            {
+              "time": 0.3333,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 0.8333,
+              "x": -160,
+              "y": 0,
+              "curve": [
+                0.375,
+                0.62,
+                0.716,
+                1
+              ]
+            },
+            {
+              "time": 1.1667,
+              "x": -150,
+              "y": 0
+            }
+          ]
+        },
+        "respin21": {
+          "translate": [
+            {
+              "time": 0.1667,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 0.6667,
+              "x": -160,
+              "y": 0,
+              "curve": [
+                0.375,
+                0.62,
+                0.716,
+                1
+              ]
+            },
+            {
+              "time": 1,
+              "x": -150,
+              "y": 0
+            }
+          ]
+        },
+        "respin22": {
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 0.5,
+              "x": -160,
+              "y": 0,
+              "curve": [
+                0.375,
+                0.62,
+                0.716,
+                1
+              ]
+            },
+            {
+              "time": 0.8333,
+              "x": -150,
+              "y": 0
+            }
+          ]
+        },
+        "respin30": {
+          "translate": [
+            {
+              "time": 0.3333,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 0.8333,
+              "x": -160,
+              "y": 0,
+              "curve": [
+                0.375,
+                0.62,
+                0.716,
+                1
+              ]
+            },
+            {
+              "time": 1.1667,
+              "x": -150,
+              "y": 0
+            }
+          ]
+        },
+        "respin31": {
+          "translate": [
+            {
+              "time": 0.1667,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 0.6667,
+              "x": -160,
+              "y": 0,
+              "curve": [
+                0.375,
+                0.62,
+                0.716,
+                1
+              ]
+            },
+            {
+              "time": 1,
+              "x": -150,
+              "y": 0
+            }
+          ]
+        },
+        "respin32": {
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 0.5,
+              "x": -160,
+              "y": 0,
+              "curve": [
+                0.375,
+                0.62,
+                0.716,
+                1
+              ]
+            },
+            {
+              "time": 0.8333,
+              "x": -150,
+              "y": 0
+            }
+          ]
+        },
+        "respin40": {
+          "translate": [
+            {
+              "time": 0.3333,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 0.8333,
+              "x": -160,
+              "y": 0,
+              "curve": [
+                0.375,
+                0.62,
+                0.716,
+                1
+              ]
+            },
+            {
+              "time": 1.1667,
+              "x": -150,
+              "y": 0
+            }
+          ]
+        },
+        "respin41": {
+          "translate": [
+            {
+              "time": 0.1667,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 0.6667,
+              "x": -160,
+              "y": 0,
+              "curve": [
+                0.375,
+                0.62,
+                0.716,
+                1
+              ]
+            },
+            {
+              "time": 1,
+              "x": -150,
+              "y": 0
+            }
+          ]
+        },
+        "respin42": {
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 0.5,
+              "x": -160,
+              "y": 0,
+              "curve": [
+                0.375,
+                0.62,
+                0.716,
+                1
+              ]
+            },
+            {
+              "time": 0.8333,
+              "x": -150,
+              "y": 0
+            }
+          ]
+        },
+        "respin01": {
+          "translate": [
+            {
+              "time": 0.1667,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 1,
+              "x": -235,
+              "y": 0
+            }
+          ]
+        },
+        "respin02": {
+          "translate": [
+            {
+              "time": 0,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 0.8333,
+              "x": -235,
+              "y": 0
+            }
+          ]
+        },
+        "respin00": {
+          "translate": [
+            {
+              "time": 0.3333,
+              "x": 0,
+              "y": 0,
+              "curve": [
+                0.243,
+                0,
+                0.68,
+                0.71
+              ]
+            },
+            {
+              "time": 1.1667,
+              "x": -235,
+              "y": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+
+<style>
+    .bonusFeatureHeaderUC{
+        display: flex;
+        justify-content: center;
+        padding: 10px 0 25px 0;
+        margin-top: 20px;
+        height: 10px;
+    }
+
+    .pageContent{
+        display: flex;
+        padding-top: 80px;
+    }
+
+    .leftColumn{
+        width: 50%;
+    }
+    .rightColumn{
+        width: 50%;
+    }
+
+</style>
+<div class="interface-paytable_section interface-settingsSection_subSection utils_center_text" >
+
+    <div class="header bonusFeatureHeaderUC">
+        <div>{{HEADER}} &amp; {{HEADER2}}</div>
+    </div>
+
+    <div class="pageContent">
+        <div class="leftColumn">
+            <div class="image slides"></div>
+        </div>
+        <div class="rightColumn">
+            {{#BODY}}
+                <div class="paytable-text">{{.}}</div>
+            {{/BODY}}
+        </div>
+    </div>
+</div>
