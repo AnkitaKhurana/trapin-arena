@@ -2,7 +2,7 @@ import React from "react";
 import GameCard from "../../Common/Card";
 import { withStyles } from "@material-ui/styles";
 import PropTypes from "prop-types";
-import Games from '../../Games/games';
+import Games from "../../Games/games";
 
 const styles = theme => ({});
 class RightScreen extends React.Component {
@@ -13,9 +13,8 @@ class RightScreen extends React.Component {
       currentGame: ""
     };
     this.handleGamePlay = this.handleGamePlay.bind(this);
-
   }
-  handleGamePlay(gameId){
+  handleGamePlay(gameId) {
     this.setState({
       isGameOn: true,
       currentGame: gameId
@@ -25,8 +24,18 @@ class RightScreen extends React.Component {
     const { classes } = this.props;
 
     if (this.state.isGameOn) {
-      return <Games gameId={this.state.currentGame} ></Games>;
-    } else return <GameCard isGameOn={this.state.isGameOn} handleGamePlay={this.handleGamePlay} />;
+      return <Games gameId={this.state.currentGame}></Games>;
+    } else
+      return (
+        <React.Fragment>
+          <GameCard
+            isGameOn={this.state.isGameOn}
+            handleGamePlay={this.handleGamePlay}
+          />
+
+       
+        </React.Fragment>
+      );
   }
 }
 
