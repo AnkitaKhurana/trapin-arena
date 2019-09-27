@@ -1,25 +1,40 @@
 import * as PIXI from "pixi.js";
 import React from "react";
-import { mainBackgroundSetup } from "../QuickBuilder/Functions/backgroundFunctions.js";
+import { mainBackgroundSetup } from "./Functions/background.js";
+import { cloudSetup } from "./Functions/cloud.js";
+
+import mainBackgroundImage from "./Multimedia/images/1280x720/backgrounds/mg_background.jpg";
+import cloudImageAtlas from "./Multimedia/images/1280x720/spine/mainGame/mainGame_background.atlas"; //your atlas file
 
 export default class QuickBuilder extends React.Component {
   constructor(props) {
     super(props);
     this.pixi_cnt = null;
     this.app = new PIXI.Application({
-      width: 600,
+      width: 1000,
       height: 600,
       transparent: false
     });
   }
+  loadAllResources = mainGameContainer => {
+    let loader = new PIXI.loaders.Loader();
+    window.loader = loader;
+    window.loader
+      .add("mainGameBackground", mainBackgroundImage)
+      .add("cloudImageAtlas", cloudImageAtlas);
+
+    window.loader.load();
+    window.loader.onComplete.add(() => {
+      this.setupGame(mainGameContainer);
+    });
+  };
   setupGame = mainGameContainer => {
     mainBackgroundSetup(mainGameContainer);
+    cloudSetup(mainGameContainer);
   };
   initialize = () => {
-    //We will create a sprite and then add it to stage and (0,0) position
-    //  this.avatar = new PIXI.Sprite(this.app.loader.resources["avatar"].texture);
     var mainGameContainer = new PIXI.Container();
-    this.setupGame(mainGameContainer);
+    this.loadAllResources(mainGameContainer);
     this.app.stage.addChild(mainGameContainer);
   };
   updatePixiCnt = element => {
@@ -40,7 +55,6 @@ export default class QuickBuilder extends React.Component {
             this.updatePixiCnt(element);
           }}
         />
-        <img src="./Games/QuickBuilder/Functions/image.jpg" />
       </React.Fragment>
     );
   }
