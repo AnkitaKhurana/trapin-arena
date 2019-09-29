@@ -3,9 +3,11 @@ import * as PIXI from "pixi.js";
 window.PIXI = PIXI;
 import "pixi-particles";
 import "pixi-spine";
-import cloudImageJson from "../Multimedia/images/1280x720/spine/mainGame/mainGame_background.json";
+import cloudImageJson from "../Multimedia/images/1280x720/spine/mainGame/mainGame_background.json";//"../Multimedia/images/1280x720/spine/mainGame/mainGame_background.json";
 
 let addClouds = (parentContainer) => {
+  debugger;
+  let cloudContainer = new PIXI.Container();
   let cloudImageAtlas = window.loader.resources.cloudImageAtlas;
   let spineAtlas = new PIXI.spine.core.TextureAtlas(cloudImageAtlas.data, function (image, callback) {
     callback(PIXI.BaseTexture.fromImage(image));
@@ -14,13 +16,11 @@ let addClouds = (parentContainer) => {
   let spineAtlasLoader = new PIXI.spine.core.AtlasAttachmentLoader(spineAtlas)
   let spineJsonParser = new PIXI.spine.core.SkeletonJson(spineAtlasLoader);
   let spineData = spineJsonParser.readSkeletonData(cloudImageJson);
-
   let cloudSpine = new PIXI.spine.Spine(spineData);
 
-
   cloudSpine.state.setAnimation(0, 'idle', true);
-
-  parentContainer.addChild(cloudSpine);
+  cloudContainer.addChild(cloudSpine);
+  parentContainer.addChild(cloudContainer);
 }
 export let cloudSetup = (parentContainer) => {
   addClouds(parentContainer);
