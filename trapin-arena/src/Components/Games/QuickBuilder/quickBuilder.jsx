@@ -5,6 +5,7 @@ import { cloudSetup } from "./Functions/cloud.js";
 
 import mainBackgroundImage from "./Multimedia/images/1280x720/backgrounds/mg_background.jpg";
 import cloudImageAtlas from "./Multimedia/images/1280x720/spine/mainGame/mainGame_background.atlas"; //your atlas file
+import cloudimage from "./Multimedia/images/1280x720/spine/mainGame/mainGame_background.png"; //your atlas file
 
 export default class QuickBuilder extends React.Component {
   constructor(props) {
@@ -20,6 +21,7 @@ export default class QuickBuilder extends React.Component {
     let loader = new PIXI.loaders.Loader();
     window.loader = loader;
     window.loader
+    .add("mainGame_background.png",cloudimage)
       .add("mainGameBackground", mainBackgroundImage)
       .add("cloudImageAtlas", cloudImageAtlas);
 

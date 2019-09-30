@@ -17,9 +17,11 @@ let addClouds = (parentContainer) => {
   let spineJsonParser = new PIXI.spine.core.SkeletonJson(spineAtlasLoader);
   let spineData = spineJsonParser.readSkeletonData(cloudImageJson);
   let cloudSpine = new PIXI.spine.Spine(spineData);
-
+  
   cloudSpine.state.setAnimation(0, 'idle', true);
   cloudContainer.addChild(cloudSpine);
+  cloudContainer.x = 600;
+  cloudContainer.y = 500;
   parentContainer.addChild(cloudContainer);
 }
 export let cloudSetup = (parentContainer) => {
