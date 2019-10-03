@@ -6,7 +6,6 @@ import "pixi-spine";
 import cloudImageJson from "../Multimedia/images/1280x720/spine/mainGame/mainGame_background.json";//"../Multimedia/images/1280x720/spine/mainGame/mainGame_background.json";
 
 let addClouds = (parentContainer) => {
-  debugger;
   let cloudContainer = new PIXI.Container();
   let cloudImageAtlas = window.loader.resources.cloudImageAtlas;
   let spineAtlas = new PIXI.spine.core.TextureAtlas(cloudImageAtlas.data, function (image, callback) {
