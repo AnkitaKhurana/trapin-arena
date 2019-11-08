@@ -1,10 +1,12 @@
 import * as PIXI from "pixi.js";
 import React from "react";
-import { mainBackgroundSetup } from "./Functions/background.js";
-import { cloudSetup } from "./Functions/cloud.js";
-import { riverExtraSetup } from "./Functions/riverExtra.js";
+import { mainBackgroundSetup } from "./GameComponents/background.js";
+import { cloudSetup } from "./GameComponents/cloud.js";
+import { riverExtraSetup } from "./GameComponents/riverExtra.js";
+import {fishesSetup} from "./GameComponents/fishes.js";
 
 import mainBackgroundImage from "./Multimedia/images/1280x720/backgrounds/mg_background.jpg";
+import purpleRightFacingFish from "./Multimedia/images/2dfishgameasset--184d9b3s952p2k4g3h/spritesheets/__cartoon_fish_06_purple_swim.png";
 import cloudImageAtlas from "./Multimedia/images/1280x720/spine/mainGame/mainGame_background.atlas"; //your atlas file
 import cloudimage from "./Multimedia/images/1280x720/spine/mainGame/mainGame_background.png"; //your atlas file
 import riverExtraImage from "./Multimedia/images/1280x720/spine/riverExtra/riverExtra.png"; //your atlas file
@@ -27,6 +29,7 @@ export default class QuickBuilder extends React.Component {
     window.loader = loader;
     window.loader
     .add("mainGame_background.png",cloudimage)
+     .add("purpleRightFacingFish",purpleRightFacingFish)
       .add("mainGameBackground", mainBackgroundImage)
       .add("cloudImageAtlas", cloudImageAtlas)
       .add("riverExtra.png",riverExtraImage)
@@ -41,6 +44,7 @@ export default class QuickBuilder extends React.Component {
     mainBackgroundSetup(mainGameContainer);
     cloudSetup(mainGameContainer);
     riverExtraSetup(mainGameContainer);
+    fishesSetup(mainGameContainer);
   };
   initialize = () => {
     var mainGameContainer = new PIXI.Container();

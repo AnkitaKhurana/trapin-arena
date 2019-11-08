@@ -22,10 +22,7 @@ let addRiverExtra= (parentContainer) => {
   riverExtraContainer.x = 410;
   riverExtraContainer.y = 400;
   riverExtraContainer.scale.x = (0.5)
-  riverExtraContainer.scale.y = (0.5)
-
-  console.log(riverExtraContainer.scale)
-  
+  riverExtraContainer.scale.y = (0.5)  
   parentContainer.addChild(riverExtraContainer);
 }
 export let riverExtraSetup = (parentContainer) => {
