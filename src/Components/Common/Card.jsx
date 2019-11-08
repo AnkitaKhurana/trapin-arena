@@ -24,7 +24,7 @@ class GameCard extends React.Component {
   }
 
   openGame(event) {
-    this.props.handleGamePlay(event.currentTarget.id)
+    this.props.handleGamePlay(event.currentTarget.id);
   }
 
   render() {
