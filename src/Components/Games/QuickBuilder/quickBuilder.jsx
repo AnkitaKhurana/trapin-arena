@@ -20,8 +20,7 @@ export default class QuickBuilder extends React.Component {
     this.pixi_cnt = null;
     this.app = new PIXI.Application({
       width: 1000,
-      height: 600,
-      transparent: false
+      height: 600
     });
   }
   loadAllResources = mainGameContainer => {
@@ -44,7 +43,7 @@ export default class QuickBuilder extends React.Component {
     mainBackgroundSetup(mainGameContainer);
     cloudSetup(mainGameContainer);
     riverExtraSetup(mainGameContainer);
-    fishesSetup(mainGameContainer);
+    fishesSetup(mainGameContainer, this.app);
   };
   initialize = () => {
     var mainGameContainer = new PIXI.Container();
@@ -73,3 +72,4 @@ export default class QuickBuilder extends React.Component {
     );
   }
 }
+
