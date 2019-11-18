@@ -6,8 +6,13 @@ import { delay } from "q";
 /**
  * Returns a random number between min (inclusive) and max (exclusive)
  */
-let getRandomArbitrary=(min, max) =>{
+let getRandomArbitrary = (min, max) => {
     return Math.random() * (max - min) + min;
+}
+
+let burstFish = (event) => {
+    event.currentTarget.visible = false;
+
 }
 
 let fishes = (parentContainer, app) => {
@@ -18,13 +23,16 @@ let fishes = (parentContainer, app) => {
         purpleFishSprite.visible = false;
         purpleFishSprite.x = 500;
         purpleFishSprite.y = 400;
+        purpleFishSprite.interactive = true;
+        purpleFishSprite.click = burstFish;
+        purpleFishSprite.touch = burstFish;
         purpleFishSprite.play();
 
-        let randomNumber = getRandomArbitrary(100,500);
-        points.push(new PIXI.Point(500 + randomNumber*i, 500));
-        points.push(new PIXI.Point(450 + randomNumber*i, 300));
-        points.push(new PIXI.Point(250 + randomNumber*i, 300));
-        points.push(new PIXI.Point(200 + randomNumber*i, 500));
+        let randomNumber = getRandomArbitrary(100, 500);
+        points.push(new PIXI.Point(500 + randomNumber * i, 500));
+        points.push(new PIXI.Point(450 + randomNumber * i, 300));
+        points.push(new PIXI.Point(250 + randomNumber * i, 300));
+        points.push(new PIXI.Point(200 + randomNumber * i, 500));
 
         setTimeout(() => {
             purpleFishSprite.visible = true;
@@ -32,12 +40,12 @@ let fishes = (parentContainer, app) => {
         }, i * 1000);
         fishesContainer.addChild(purpleFishSprite);
 
-    } 
+    }
     parentContainer.addChild(fishesContainer);
 
 }
 export let fishesSetup = (parentContainer, app) => {
-    setInterval(()=>{ fishes(parentContainer, app);}, 3000);   
+    setInterval(() => { fishes(parentContainer, app); }, 3000);
 };
 
 
