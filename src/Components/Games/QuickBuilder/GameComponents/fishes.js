@@ -1,8 +1,7 @@
 import * as PIXI from "pixi.js";
 import { GameSpriteSheet } from "../../PixiUtilities/GameSpriteSheet.js";
 import { BezierCurveAnimation } from "../../PixiUtilities/GameAnimations.js";
-import { delay } from "q";
-
+import {updateGameScore} from "./score.js";
 /**
  * Returns a random number between min (inclusive) and max (exclusive)
  */
@@ -12,7 +11,7 @@ let getRandomArbitrary = (min, max) => {
 
 let burstFish = (event) => {
     event.currentTarget.visible = false;
-
+    updateGameScore(2);
 }
 
 let fishes = (parentContainer, app) => {

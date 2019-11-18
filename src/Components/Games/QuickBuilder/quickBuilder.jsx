@@ -4,6 +4,7 @@ import { mainBackgroundSetup } from "./GameComponents/background.js";
 import { cloudSetup } from "./GameComponents/cloud.js";
 import { riverExtraSetup } from "./GameComponents/riverExtra.js";
 import {fishesSetup} from "./GameComponents/fishes.js";
+import { scoreSetup } from "./GameComponents/score.js";
 
 import mainBackgroundImage from "./Multimedia/images/1280x720/backgrounds/mg_background.jpg";
 import purpleRightFacingFish from "./Multimedia/images/2dfishgameasset--184d9b3s952p2k4g3h/spritesheets/__cartoon_fish_06_purple_swim.png";
@@ -44,6 +45,7 @@ export default class QuickBuilder extends React.Component {
     cloudSetup(mainGameContainer);
     riverExtraSetup(mainGameContainer);
     fishesSetup(mainGameContainer, this.app);
+    scoreSetup(mainGameContainer);
   };
   initialize = () => {
     var mainGameContainer = new PIXI.Container();
