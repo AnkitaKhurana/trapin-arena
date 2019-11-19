@@ -3,7 +3,7 @@ import React from "react";
 import { mainBackgroundSetup } from "./GameComponents/background.js";
 import { cloudSetup } from "./GameComponents/cloud.js";
 import { riverExtraSetup } from "./GameComponents/riverExtra.js";
-import {fishesSetup} from "./GameComponents/fishes.js";
+import { fishesSetup } from "./GameComponents/fishes.js";
 import { scoreSetup } from "./GameComponents/score.js";
 
 import mainBackgroundImage from "./Multimedia/images/1280x720/backgrounds/mg_background.jpg";
@@ -12,31 +12,47 @@ import cloudImageAtlas from "./Multimedia/images/1280x720/spine/mainGame/mainGam
 import cloudimage from "./Multimedia/images/1280x720/spine/mainGame/mainGame_background.png"; //your atlas file
 import riverExtraImage from "./Multimedia/images/1280x720/spine/riverExtra/riverExtra.png"; //your atlas file
 import riverExtraAtlas from "./Multimedia/images/1280x720/spine/riverExtra/riverExtra.atlas"; //your atlas file
-
-
+import "./quickBuilder.css";
 
 export default class QuickBuilder extends React.Component {
   constructor(props) {
     super(props);
     this.pixi_cnt = null;
+    this.loadingAnimationAdded = false;
     this.app = new PIXI.Application({
       width: 1000,
       height: 600
     });
   }
+
+  playLoadingAnimation = () => {
+    let htmlLoadingElement = document.createElement("div");
+    htmlLoadingElement.setAttribute("class", "loader");
+
+    if (!this.loadingAnimationAdded)
+      this.pixi_cnt.appendChild(htmlLoadingElement);
+    this.loadingAnimationAdded = true;
+    return htmlLoadingElement;
+  };
+
   loadAllResources = mainGameContainer => {
     let loader = new PIXI.loaders.Loader();
+    let loadingContainer = {};
     window.loader = loader;
     window.loader
-    .add("mainGame_background.png",cloudimage)
-     .add("purpleRightFacingFish",purpleRightFacingFish)
+      .add("mainGame_background.png", cloudimage)
+      .add("purpleRightFacingFish", purpleRightFacingFish)
       .add("mainGameBackground", mainBackgroundImage)
       .add("cloudImageAtlas", cloudImageAtlas)
-      .add("riverExtra.png",riverExtraImage)
-      .add("riverExtraAtlas",riverExtraAtlas)
+      .add("riverExtra.png", riverExtraImage)
+      .add("riverExtraAtlas", riverExtraAtlas);
 
     window.loader.load();
+    window.loader.onProgress.add(() => {
+      loadingContainer = this.playLoadingAnimation();
+    });
     window.loader.onComplete.add(() => {
+     this.pixi_cnt.children[1].remove(); // TODO : find a better way to remove loader
       this.setupGame(mainGameContainer);
     });
   };
@@ -66,6 +82,7 @@ export default class QuickBuilder extends React.Component {
     return (
       <React.Fragment>
         <div
+          style={{position: "relative"}}
           ref={element => {
             this.updatePixiCnt(element);
           }}
@@ -74,4 +91,3 @@ export default class QuickBuilder extends React.Component {
     );
   }
 }
-

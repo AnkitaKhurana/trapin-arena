@@ -1,7 +1,7 @@
 import * as PIXI from "pixi.js";
 import { GameSpriteSheet } from "../../PixiUtilities/GameSpriteSheet.js";
 import { BezierCurveAnimation } from "../../PixiUtilities/GameAnimations.js";
-import {updateGameScore} from "./score.js";
+import { updateGameScore } from "./score.js";
 /**
  * Returns a random number between min (inclusive) and max (exclusive)
  */
