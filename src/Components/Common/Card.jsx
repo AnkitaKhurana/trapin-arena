@@ -40,17 +40,17 @@ class GameCard extends React.Component {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
-              Some Game Name
+              {this.props.gameName}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Game description Game description Game description Game
-              description
+            {this.props.gameDescription}
+             
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
           <Button
-            id="some-id"
+            id= {this.props.gameId}
             size="small"
             color="primary"
             onClick={this.openGame.bind(this)}
