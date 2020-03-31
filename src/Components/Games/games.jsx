@@ -3,10 +3,10 @@ import QuickBuilder from '../Games/QuickBuilder/quickBuilder';
 
 
 function Games(props) {
- 
+    console.log(props)
     switch(props.gameId){
-        case 'some-game' : return <QuickBuilder/>;
-        default : return <QuickBuilder/>
+        case 'fishing' : return <QuickBuilder/>;
+        default : return <React-Fragment/>
     }
 
 }

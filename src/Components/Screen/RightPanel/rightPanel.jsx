@@ -29,11 +29,21 @@ class RightScreen extends React.Component {
       return (
         <React.Fragment>
           <GameCard
+            gameName="Fishing"
+            gameId="fishing"
+            isGameOn={this.state.isGameOn}
+            gameDescription=" Game description Game description Game description Game
+            description"
+            handleGamePlay={this.handleGamePlay}
+          />
+          <GameCard
+            gameName="3d"
+            gameId="3d"
+            gameDescription=" Game description Game description Game description Game
+            description"
             isGameOn={this.state.isGameOn}
             handleGamePlay={this.handleGamePlay}
           />
-
-       
         </React.Fragment>
       );
   }
